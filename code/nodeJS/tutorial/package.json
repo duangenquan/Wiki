@@ -1,0 +1,17 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "description": "// NodeJS is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code server-side.",
+  "main": "01_intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "redis": "^2.8.0",
+    "request": "^2.85.0",
+    "socket.io": "^2.1.0"
+  }
+}
