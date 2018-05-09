@@ -12,14 +12,14 @@ NodeJS is an open-source, cross-platform JavaScript run-time environment that ex
 
 More tips:
 > * NPM
-	* npm init -y
-    * npm search <`module`>
-	* npm install <`pkg`> --save ()
-	* npm install <`pkg`> --global or npm install <`pkg`> -g
-	* npm install <`pkg`>@* --save (add the latest version for the package)
-	    * npm install node-markdown@* --save
-	* npm install <`pkg`>@<`version range`>
-	* npm update --save
+>   * npm init -y
+>     * npm search <`module`>
+>   * npm install <`pkg`> --save ()
+>   * npm install <`pkg`> --global or npm install <`pkg`> -g
+>   * npm install <`pkg`>@* --save (add the latest version for the package)
+>     * npm install node-markdown@* --save
+>   * npm install <`pkg`>@<`version range`>
+>   * npm update --save
 > * [Redis](https://redis.io/topics/quickstart)
-	* redis flushall
-	* redis flushdb
+>   * redis flushall
+>   * redis flushdb
