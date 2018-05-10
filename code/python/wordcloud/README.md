@@ -10,9 +10,7 @@ python demo.py
 ```
 
 Results are:
-- A square form result 
-
-                  ![](demo_0_square.png)
+- A square form result ![](demo_0_square.png)
 
 - A colorful result with gray masks and default settings ![](demo_1_default_color.png)
 
