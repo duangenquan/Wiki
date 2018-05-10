@@ -1,0 +1,4 @@
+wordcloud==1.4.1
+numpy==1.14.2
+matplotlib==1.4.3
+Pillow==5.1.0
