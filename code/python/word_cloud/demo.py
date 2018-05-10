@@ -1,0 +1,84 @@
+#!/usr/bin/env python
+
+# --------------------------------------------------------
+# Word Cloud Examples
+# Licensed under The MIT License [see LICENSE for details]
+# Written by Genquan (Stone) Duan
+# --------------------------------------------------------
+
+
+import numpy as np
+from PIL import Image
+from os import path
+import matplotlib.pyplot as plt
+import random, copy
+
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+
+
+def grey_color_func(word, font_size, position, orientation, random_state=None,
+                    **kwargs):
+    return "hsl(0, 0%%, %d%%)" % random.randint(60, 100)
+
+# 1. Initialize Data
+# Load data, the movie script of "a new hope",
+# downloaded from http://www.imsdb.com/scripts/Star-Wars-A-New-Hope.html
+text = open('a_new_hope.txt').read()
+# Reprocess similar words in text
+dicts = {
+    "HAN":"Han",
+    "LUKE'S":"Luke"
+}
+text = reduce(lambda a, kv: a.replace(*kv), dicts.iteritems(), text)
+
+# A mask image to place words
+# All masks are in the same size for easy demoing
+mask = np.array(Image.open("mask_stormtrooper_gray.png"))
+maskColor = np.array(Image.open("mask_alice_color.png"))
+
+# adding movie script specific stopwords
+stopwords = set(STOPWORDS)
+stopwords.update(["int", "ext"])
+
+# 2. Process text using word cloud
+# More descriptions for parameters could be found in 
+# https://github.com/amueller/word_cloud/blob/master/wordcloud/wordcloud.py
+wcnull = WordCloud().generate(text)
+wc = WordCloud(background_color="white",
+               max_words=200, 
+               mask=mask, 
+               stopwords=stopwords, 
+               margin=10,
+               random_state=1).generate(text)
+
+# 3. Visualization word cloud results 
+# 3.0 a square word cloud
+wcnull.to_file("demo_square.png")
+plt.figure()
+plt.title("Square form")
+plt.imshow(wcnull, interpolation="bilinear")
+
+# 3.1 color results with default settings
+default_wc_image = copy.deepcopy(wc)
+default_wc_image.to_file("demo_default_color.png")
+plt.figure()
+plt.title("Default color")
+plt.imshow(default_wc_image, interpolation="bilinear")
+
+# 3.2 color results with given color images
+custom_color_wc_image = copy.deepcopy(wc)
+custom_color_wc_image.recolor(color_func = ImageColorGenerator(maskColor))
+custom_color_wc_image.to_file("demo_custom_color.png")
+plt.figure()
+plt.title("Customr color")
+plt.imshow(custom_color_wc_image, interpolation="bilinear")
+
+# 3.3. color results with custom gray 
+custom_gray_wc_image = copy.deepcopy(wc)
+custom_gray_wc_image.recolor(color_func=grey_color_func, random_state=3)
+custom_gray_wc_image.to_file("demo_custom_gray.png")
+plt.figure()
+plt.title("Custom gray")
+plt.imshow(custom_gray_wc_image, interpolation="bilinear")
+
+plt.show()
