@@ -10,12 +10,16 @@ python demo.py
 ```
 
 Results are:
-- A square form result ![](demo_0_square.png)
+- A square form result
+
+  ​						 ![](demo_0_square.png)
 
 - A colorful result with gray masks and default settings ![](demo_1_default_color.png)
 
 - A colorful result with color masks![](demo_2_custom_color.png)
+
 - A colorful result with coloring some special words![](demo_3_color_special_word.png)
+
 - A gray result with gray masks ![](demo_4_custom_gray.png)
 
 ## Tips
@@ -40,4 +44,4 @@ duangenquan@gmail.com
   
 
   
-  
+
