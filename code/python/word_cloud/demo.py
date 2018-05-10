@@ -12,13 +12,9 @@ from PIL import Image
 from os import path
 import matplotlib.pyplot as plt
 import random, copy
+from utils import *
 
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
-
-
-def grey_color_func(word, font_size, position, orientation, random_state=None,
-                    **kwargs):
-    return "hsl(0, 0%%, %d%%)" % random.randint(60, 100)
 
 # 1. Initialize Data
 # Load data, the movie script of "a new hope",
@@ -53,14 +49,14 @@ wc = WordCloud(background_color="white",
 
 # 3. Visualization word cloud results 
 # 3.0 a square word cloud
-wcnull.to_file("demo_square.png")
+wcnull.to_file("demo_0_square.png")
 plt.figure()
 plt.title("Square form")
 plt.imshow(wcnull, interpolation="bilinear")
 
 # 3.1 color results with default settings
 default_wc_image = copy.deepcopy(wc)
-default_wc_image.to_file("demo_default_color.png")
+default_wc_image.to_file("demo_1_default_color.png")
 plt.figure()
 plt.title("Default color")
 plt.imshow(default_wc_image, interpolation="bilinear")
@@ -68,7 +64,7 @@ plt.imshow(default_wc_image, interpolation="bilinear")
 # 3.2 color results with given color images
 custom_color_wc_image = copy.deepcopy(wc)
 custom_color_wc_image.recolor(color_func = ImageColorGenerator(maskColor))
-custom_color_wc_image.to_file("demo_custom_color.png")
+custom_color_wc_image.to_file("demo_2_custom_color.png")
 plt.figure()
 plt.title("Customr color")
 plt.imshow(custom_color_wc_image, interpolation="bilinear")
@@ -76,9 +72,24 @@ plt.imshow(custom_color_wc_image, interpolation="bilinear")
 # 3.3. color results with custom gray 
 custom_gray_wc_image = copy.deepcopy(wc)
 custom_gray_wc_image.recolor(color_func=grey_color_func, random_state=3)
-custom_gray_wc_image.to_file("demo_custom_gray.png")
+custom_gray_wc_image.to_file("demo_3_custom_gray.png")
 plt.figure()
 plt.title("Custom gray")
 plt.imshow(custom_gray_wc_image, interpolation="bilinear")
+
+# 3.4 color some special words
+color_to_words = {
+    # words below will be colored with a green single color function
+    '#00ff00': ['Han', 'explicit', 'simple', 'sparse'],
+    # will be colored with a red single color function
+    'red': ['Luke', 'implicit', 'complex', 'complicated', 'nested']
+}
+grouped_color_func = GroupedColorFunc(color_to_words, "grey")
+color_special_word_wc_image = copy.deepcopy(wc)
+color_special_word_wc_image.recolor(color_func=grouped_color_func, random_state=3)
+color_special_word_wc_image.to_file("demo_4_color_special_word.png")
+plt.figure()
+plt.title("Color special word")
+plt.imshow(color_special_word_wc_image, interpolation="bilinear")
 
 plt.show()
