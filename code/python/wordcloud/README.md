@@ -9,33 +9,28 @@ pip intall -U -r requirements.txt
 python demo.py
 ```
 
-you will see results as below
-
-
-
+Results are:
 - A square form result 
-
-  ​					 ![](demo_0_square.png)
+                  ![](demo_0_square.png)
 
 - A colorful result with gray masks and default settings ![](demo_1_default_color.png)
 
-  - A colorful result with color masks![](demo_2_custom_color.png)
-  - A colorful result with coloring some special words![](demo_3_color_special_word.png)
-  - A gray result with gray masks ![](demo_4_custom_gray.png)
+- A colorful result with color masks![](demo_2_custom_color.png)
+- A colorful result with coloring some special words![](demo_3_color_special_word.png)
+- A gray result with gray masks ![](demo_4_custom_gray.png)
 
-  ## Tips
+## Tips
 
-  - If you would like to see popped up results, please uncomment the last line "plt.show()"
+- If you would like to see popped up results, please uncomment the last line "plt.show()"
 
-  - If you encounter problems to visualize resutls for texts with unicode characters, please try to sepcify fonts. For example, we can use *SimHei.ttf* to visualize Chinese
+- If you encounter problems to visualize resutls for texts with unicode characters, please try to sepcify fonts. For example, we can use *SimHei.ttf* to visualize Chinese
 
     ```python
     wc = WordCloud(font_path=r"/Library/Fonts/SimHei.ttf",max_words=200).generate(text)
     ```
 
-  # Author
-
-  duangenquan@gmail.com
+# Author
+duangenquan@gmail.com
 
   
 
