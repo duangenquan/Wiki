@@ -5,6 +5,7 @@ This repo shows exmaples for word cloud with different visualization settings, m
 ## Quick start 
 
 ```python
+pip intall -U -r requirements.txt
 python demo.py
 ```
 
