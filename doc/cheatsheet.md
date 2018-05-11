@@ -20,7 +20,7 @@
 
 [Numpy](Numpy_Python_Cheat_Sheet.pdf)
 
-[Data processing using Pandas](DataEx using Pandas.pdf)
+[Data processing using Pandas](DataEx_using_Pandas.pdf)
 
 [Exploration with Numpy, Pandas and Matplotlib](Data-Exploration-in-Python.pdf)
 
@@ -45,4 +45,12 @@ Probability Cheat Sheet ([v0](probability_cheatsheet_v0.pdf), [v1](probability_c
 [Hadoop Cheat Sheet](http://www.jesse-anderson.com/2016/03/hadoop-cheat-sheet/)
 
 [Hive Function Cheat Sheet](https://www.qubole.com/resources/hive-function-cheat-sheet/)
+
+
+
+## Others
+
+[Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+
 
