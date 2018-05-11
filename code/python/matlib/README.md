@@ -2,7 +2,7 @@
 
 The examples includes:
 
-[![](rect.png)]()
+[![](rect.png)](rect.py)
 
 ## Quick start 
 
