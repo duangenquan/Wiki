@@ -8,35 +8,35 @@
 
 [Scikit-learn ml](http://scikit-learn.org/stable/tutorial/machine_learning_map/)
 
-[MLalgorithms-PythonR](MLalgorithms-PythonR.pdf)
+[MLalgorithms-PythonR](./cheatsheet/MLalgorithms-PythonR.pdf)
 
 
 
 ## Python
 
-[Python Basic](PythonForDataScience.pdf)
+[Python Basic](./cheatsheet/PythonForDataScience.pdf)
 
-[Scikit-Learn](Scikit-Learn.pdf)
+[Scikit-Learn](./cheatsheet/Scikit-Learn.pdf)
 
-[Numpy](Numpy_Python_Cheat_Sheet.pdf)
+[Numpy](./cheatsheet/Numpy_Python_Cheat_Sheet.pdf)
 
-[Data processing using Pandas](DataEx_using_Pandas.pdf)
+[Data processing using Pandas](./cheatsheet/DataEx_using_Pandas.pdf)
 
-[Exploration with Numpy, Pandas and Matplotlib](Data-Exploration-in-Python.pdf)
+[Exploration with Numpy, Pandas and Matplotlib](./cheatsheet/Data-Exploration-in-Python.pdf)
 
-Visualization ([Bokeh](Python_Bokeh_Cheat_Sheet.pdf), [Matplot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.show.html), [Seaborn](http://seaborn.pydata.org/), [9_popular ways](https://www.analyticsvidhya.com/blog/2015/05/data-visualization-python/))
+Visualization ([Bokeh](./cheatsheet/Python_Bokeh_Cheat_Sheet.pdf), [Matplot](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.show.html), [Seaborn](http://seaborn.pydata.org/), [9_popular ways](https://www.analyticsvidhya.com/blog/2015/05/data-visualization-python/))
 
 
 
 ## Probability
 
-Probability Cheat Sheet ([v0](probability_cheatsheet_v0.pdf), [v1](probability_cheatsheet_v1.pdf))
+Probability Cheat Sheet ([v0](./cheatsheet/probability_cheatsheet_v0.pdf), [v1](./cheatsheet/probability_cheatsheet_v1.pdf))
 
 
 
 ## Database
 
-[SQL](sql-cheat-sheet.pdf)
+[SQL](./cheatsheet/sql-cheat-sheet.pdf)
 
 [MYSQL](http://cse.unl.edu/~sscott/ShowFiles/SQL/CheatSheet/SQLCheatSheet.html)
 
