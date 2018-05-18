@@ -2,11 +2,13 @@
 
 This tutorial shows how to install intel-vtune-amplifier-xe 2018 and walk through some examples in ubuntu16.04.
 
-### Step 1. Download [intel-vtune-amplifier-xe](https://software.intel.com/en-us/intel-vtune-amplifier-xe)
+[TOC]
+
+## Step 1. Download [intel-vtune-amplifier-xe](https://software.intel.com/en-us/intel-vtune-amplifier-xe)
 
 ​    Note that the serial number (formated as xxxx-xxxxxxxx) will be used during installation. 
 
-### Step 2. Install intel-vtune-amplifier-xe
+## Step 2. Install intel-vtune-amplifier-xe
 
 ```bash
 sh ./Install_GUI.sh
@@ -18,7 +20,7 @@ sh ./Install_GUI.sh
 >  + Examples for c++/fortran are in ./samples/en
 >       More descriptions can be found in [help](https://software.intel.com/en-us/vtune-amplifier-help-tutorials-and-samples) and [tutorials](https://software.intel.com/en-us/articles/intel-vtune-amplifier-tutorials).
 
-### Step 3. Walk through diskio example
+## Step 3. Walk through diskio example
 
 ​    **Get diskio sources**
 ```bash
@@ -65,8 +67,16 @@ sys	2m53.135s
 >    + Step 3.5: Check analyzed results in tabs "Summary", "Bottom-up", and "Platform" (there might be other tabs if you use other types of analysis).
     ![](./screenshots/analyzedResults.png)
 
+## Step 4. Build your own samples
 
-​      
+Here are some tips to show function name properly.
+
+```bash
+CFLAGS +=-ggdb instead of CFLAGS +=-DNDEBUG -O3 -g -rdynamic
+NOSTRIP = 1
+
+```
+
 # Author
 
 ​duangenquan@gmail.com    

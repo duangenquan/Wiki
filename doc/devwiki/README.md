@@ -2,6 +2,10 @@
 
 [TOC]
 
+# Git
+
+
+
 # C++ Profiling in Linux
 
 [cpuload example](https://github.com/gklingler/cpuProfilingDemo/blob/master/cpuload.cpp).
@@ -24,7 +28,14 @@ valgrind --tool=callgrind ./cpuload
 kcachegrind callgrind.out.xxxxx
 ```
 
+Note that, please enable debug information when compiling by
 
+```bash
+CFLAGS+=-ggdb
+NOSTRIP=1
+```
+
+  
 
 ## gprof
 
