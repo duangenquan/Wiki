@@ -4,6 +4,51 @@
 
 # Git
 
+[Git cheat sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) ([copy](../cheatsheet/gitcheatsheet.pdf))
+
+Common
+
+```bash
+git clone <project url>
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+cat ~/.ssh/irs.pub
+```
+
+
+
+Clone one branch only
+
+```bash
+git clone -b mybranch --single-branch git://sub.domain.com/repo.git
+```
+
+Submodule
+
+```bash
+# Add one submodule
+git submodule add https://github.com/socketio/socket.io 
+# Update one submodule 
+git submodule update --init --recursive
+# Clone a project with submodules
+git clone --recursive <project url>
+```
+
+Delete history
+
+```bash
+# $1 is SHA-1 of the commit you want to keep
+git checkout --orphan temp $1 
+git commit -m "Truncated history" 
+git rebase --onto temp $1 master 
+git branch -D temp
+git gc --prune=all
+git repack -a -f -F -d
+```
+
+
+
 
 
 # C++ Profiling in Linux
