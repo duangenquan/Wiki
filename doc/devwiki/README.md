@@ -2,6 +2,14 @@
 
 [TOC]
 
+## Code Editor
+
+atom
+
+sublime
+
+visual studio
+
 # Git
 
 [Git cheat sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) ([copy](../cheatsheet/gitcheatsheet.pdf))
