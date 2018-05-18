@@ -17,9 +17,21 @@ visual studio
 Common
 
 ```bash
+# Clone projects
 git clone <project url>
+
+# Set credentials
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+
+# If username and password pop up often when commit
+# we can use this cmd before commits
+git config credential.helper store
+
+# Add commits
+git commit -a -m "commits"
+
+# Generate keys
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 cat ~/.ssh/irs.pub
 ```
