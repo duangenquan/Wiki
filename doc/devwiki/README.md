@@ -164,7 +164,33 @@ CFLAGS+=-ggdb
 NOSTRIP=1
 ```
 
-  
+## gperftools
+
+Step 1. Make binary with debug information
+
+```bash
+sudo apt-get install google-perftools
+sudo apt-get install tau
+sudo ln -s /usr/lib/libprofiler.so.0 /usr/lib/libprofiler.so
+
+CFLAGS += -DWITHGPERFTOOLS
+LFLAGS += -lprofiler
+```
+
+Step 2. Run a binary as normal
+
+```bash
+./cpuload
+```
+
+Step 3. Run prof
+
+```bash
+google-pprof --callgrind ./cpuload profile.log > profile.callgrind
+kcachegrind profile.grind
+```
+
+
 
 ## gprof
 
