@@ -222,6 +222,8 @@ References
 
 > - [gprof, valgrind, gperftool](http://gernotklingler.com/blog/gprof-valgrind-gperftools-evaluation-tools-application-level-cpu-profiling-linux/)
 > - [gprof Quick-Start Guide](https://web.eecs.umich.edu/~sugih/pointers/gprof_quick.html)
+> - [gperftools wiki](http://kratos-wiki.cimne.upc.edu/index.php/How_to_Profile_an_application_(using_google-perftools))
+> - 
 
 # Others
 
