@@ -2,6 +2,10 @@
 
 [TOC]
 
+[Flask Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+
+
+
 [Gyazo](https://gyazo.com/captures) : online image editor and sharing
 
 https://libp2p.io/
@@ -14,7 +18,45 @@ https://nifi.apache.org/
 
 xcode hotkeys ([fold](https://stackoverflow.com/questions/2364484/enable-code-folding-by-default), [short cuts](http://roadfiresoftware.com/2015/05/useful-xcode-keyboard-shortcuts-for-developers/))
 
+# Hash
 
+TLSH - Trend Micro Locality Sensitive Hash ([c++ & python](https://github.com/trendmicro/tlsh),[js version](https://github.com/idealista/tlsh-js))
+
+
+
+# Database
+
+[Druid](http://druid.io/) is a high-performance, column-oriented, distributed data store.
+
+SQL
+
++ MySQL
+
+NoSQL
+
++ Redis
++ cassandra
++ MongoDB
+
+# UI Designs
+
+[dribbble](https://dribbble.com/shots)
+
+[React components that implement Google's Material Design](https://github.com/mui-org/material-ui)
+
+# Bigdata visualization 
+
+[SuperSet](https://medium.com/@InDataLabs/superset-benefits-and-limitations-of-the-open-source-data-visualization-tool-by-airbnb-8dc8ac81efa9) is the open source data visualization tool by Airbnb. [Incubator-superset Github](https://github.com/apache/incubator-superset) with [its docker image](https://github.com/amancevice/superset).
+
+[Pivot (imply)](https://docs.imply.io/on-premise/quickstart)
+
+[Metabase](https://github.com/metabase/metabase), the simplest, fastest way to get business intelligence and analytics to everyone in your company.
+
+
+
+# Interesting Repos
+
+## 
 
 
 
@@ -56,7 +98,57 @@ xcode hotkeys ([fold](https://stackoverflow.com/questions/2364484/enable-code-fo
 
 Reference
 
-# Licenses
+# Deployment
+
+[Concourse](https://concourse-ci.org/) is an open-source continuous thing-doer.
+
+
+
+### Performance Monitoring
+
+#### **Website Monitoring Tools**
+
+- [Insping](https://www.insping.com/)
+- [Updown](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwic9s39tqDXAhXINo8KHYKsAPQQFggsMAE&url=https%3A%2F%2Fupdown.io%2F&usg=AOvVaw1rGtd0XEQqX40wWxiLpXVb)
+- [Pingometer](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiapI3wtqDXAhXDLo8KHYZpCFUQFggnMAA&url=https%3A%2F%2Fpingometer.com%2F&usg=AOvVaw3hrdapeSICYDM8nqttqN_j)
+- [Uptime Robot](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjv45zotqDXAhXLpI8KHY--CbEQFgguMAA&url=https%3A%2F%2Fuptimerobot.com%2F&usg=AOvVaw1hD4IExGsCbMZNpjEF7mn_)
+- [Pingdom](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwigqLLitqDXAhWMsY8KHcbbDP0QFggnMAA&url=https%3A%2F%2Ftools.pingdom.com%2F&usg=AOvVaw3pGkR9wdb5aLnnAzIQ0lVS)
+
+#### Server Monitoring Tools
+
+- **[sensu](https://github.com/sensu/sensu)**
+- **[Ganglia](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwiLg5fAtqDXAhXGKo8KHZOHBvwQFgg8MAE&url=http%3A%2F%2Fganglia.sourceforge.net%2F&usg=AOvVaw0MGWK9N3jFEYMUE3X9kpe6)**
+- [Insping](https://www.insping.com/)
+- Monitis :  [Monitor.us](https://www.monitis.com/free-monitoring-sign-up) 
+- [Nagios Core](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwi_vdzKtqDXAhWDro8KHasuAMkQFggnMAA&url=https%3A%2F%2Fwww.nagios.com%2Fsolutions%2Fbandwidth-monitoring%2F&usg=AOvVaw2WmMZ4PrFL4e7mB7ybCyre)
+- [Collectd](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjxhIu5tqDXAhWJOI8KHYscD3MQFggnMAA&url=https%3A%2F%2Fcollectd.org%2F&usg=AOvVaw3gHlofJ33Nrrt7Rsj5wTO5)
+- [new relic](https://github.com/newrelic/node-newrelic) instruments your application for performance monitoring.
+
+#### **Network Monitoring Tools**
+
+- [Nagios](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwi-19CytqDXAhVMvI8KHV6NAlAQFggnMAA&url=https%3A%2F%2Fwww.nagios.org%2F&usg=AOvVaw3LQedeXaGoWMuftijMZUQL)
+- [Capsa Free](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjuu_2rtqDXAhUHwI8KHZOzAZ0QFggnMAA&url=http%3A%2F%2Fwww.colasoft.com%2Fcapsa-free%2F&usg=AOvVaw0W7bp0UlF6JVBf_0O-_Hs6)
+- [Fiddler](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiNx6OltqDXAhVIto8KHZZdAZwQFggnMAA&url=https%3A%2F%2Fwww.telerik.com%2Ffiddler&usg=AOvVaw1YbjZAC6d-In6jOf4TEw5b)
+- [NetworkMiner](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiHj7qetqDXAhWJtI8KHcZeCb8QFggnMAA&url=http%3A%2F%2Fwww.netresec.com%2F%3Fpage%3DNetworkMiner&usg=AOvVaw3lsVvlUWmMKXvt9SI6nCxp)
+- [Pandora FMS](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwinsLOVtqDXAhUJqI8KHf_UBcEQFggnMAA&url=https%3A%2F%2Fpandorafms.com%2F&usg=AOvVaw2XEsv0NR4jG2mGoGhAUoH8)
+
+#### Application Performance Monitoring Tools
+
+- [Insping](https://www.insping.com/)
+- [New Relic APM](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjV07iCtqDXAhVHwI8KHRu5BAoQFggrMAA&url=https%3A%2F%2Fnewrelic.com%2Fapplication-monitoring&usg=AOvVaw0hw5xmkfio_M7KoanQ5EfY)
+- [AppDynamics](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwj_7e_6taDXAhXLqY8KHflpCrYQFggnMAA&url=https%3A%2F%2Fwww.appdynamics.com%2F&usg=AOvVaw2OZsMW3zncuAbLamMK8HfX)
+- Foglight
+- [ExtraHop](https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjg_afotaDXAhXFO48KHQ2kA0YQFggnMAA&url=https%3A%2F%2Fwww.extrahop.com%2F&usg=AOvVaw1WADEHMdyDpPDUp2sjSi5g)
+
+#### **Real User Monitoring Tools**
+
+- [AppDynamics](https://en.wikipedia.org/wiki/AppDynamics)
+- [Dynatrace](https://en.wikipedia.org/wiki/Dynatrace)
+- [inspectIT](https://en.wikipedia.org/wiki/InspectIT)
+- [Akamai](https://en.wikipedia.org/wiki/Akamai)
+- [Pingdom](https://tools.pingdom.com/)
+
+### Licenses
 
 [GPL for dummies](http://blog.milkingthegnu.org/2008/04/gnu-gpl-for-dum.html)
 
@@ -64,14 +156,14 @@ Reference
 
 [General comparison for open source licenses](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
 
-
+# 
 
 # Systems
 
 ## Linux
 
 ```bash
-sudo vim /etc/ld.so.conf
+add myapp.conf to /etc/ld.so.conf.d/
 ldconfig
 ```
 

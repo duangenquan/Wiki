@@ -12,6 +12,8 @@
 
 [Harvard College’s CS50 focusing on the development of 2D and 3D interactive games](https://cs50.github.io/games/)
 
+[Facebook Machine Learning video series](https://research.fb.com/the-facebook-field-guide-to-machine-learning-video-series/)
+
 
 
 # Repos
@@ -22,13 +24,15 @@
 
 
 
+# Browser
+
+[tensorflow-rex-run](https://github.com/MagicCube/tensorflow-rex-run)
+
 # Edge
 
 [AWS Deep Lens](https://thenewstack.io/deep-dive-amazon-deeplens/) acts as an intelligent device that can run deep learning algorithms on captured images in real-time. It is an [AI camera](https://techcrunch.com/2017/11/29/amazons-aws-deeplens-is-an-ai-camera-for-developers/) for developers.
 
 [Google Vision Kit](https://aiyprojects.withgoogle.com/vision/) lets you build your own intelligent camera that can see and recognize objects using machine learning.
-
-
 
 ## Google ML Kit
 
