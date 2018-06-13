@@ -4,6 +4,20 @@
 
 [Gyazo](https://gyazo.com/captures) : online image editor and sharing
 
+https://libp2p.io/
+
+https://graphql.org/
+
+https://github.com/webrtc
+
+https://nifi.apache.org/
+
+xcode hotkeys ([fold](https://stackoverflow.com/questions/2364484/enable-code-folding-by-default), [short cuts](http://roadfiresoftware.com/2015/05/useful-xcode-keyboard-shortcuts-for-developers/))
+
+
+
+
+
 # Tech News
 
 [Google Research Blog](https://ai.googleblog.com/)
@@ -41,6 +55,103 @@
 [MIT Technology Review](https://link.zhihu.com/?target=http%3A//www.technologyreview.com/)
 
 Reference
+
+# Licenses
+
+[GPL for dummies](http://blog.milkingthegnu.org/2008/04/gnu-gpl-for-dum.html)
+
+[Compare GPL, LGPL, BSD](https://fosswire.com/post/2007/04/the-differences-between-the-gpl-lgpl-and-the-bsd/)
+
+[General comparison for open source licenses](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
+
+
+
+# Systems
+
+## Linux
+
+```bash
+sudo vim /etc/ld.so.conf
+ldconfig
+```
+
+
+
+## MAC
+
+[reset iphone](https://www.safewiper.com/tutorials/reset-iphone-without-apple-id.htmlsignout)
+
+[icloud](https://support.apple.com/en-us/HT208242)
+
+[update error](https://support.apple.com/en-us/ht201412)
+
+[Wipe macOS](https://www.macworld.co.uk/how-to/mac/how-reset-mac-factory-settings-3494564/)
+
+[Wipe PC Windows](http://home.bt.com/tech-gadgets/computing/windows-10/how-to-wipe-your-pc-with-windows-10-11364002707321)
+
+Reinstall Ubuntu
+
+- [create boot stick](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), [create boot stick using etcher](https://askubuntu.com/questions/801458/how-to-create-a-bootable-usb-stick-on-a-apple-macbook)
+- download [ubuntu releases](http://releases.ubuntu.com/)
+- 
+
+# Stream
+
+[cisco h264](https://github.com/cisco/openh264)
+
+
+
+## H264 Live Player ([Github](https://github.com/131/h264-live-player))
+
+
+
+## UV4L ([projects](http://www.linux-projects.org/))
+
+
+
+## Webrtc ([GitHub](https://github.com/webrtc/samples))
+
+
+
+## GStreamer ([wiki](https://en.wikipedia.org/wiki/GStreamer))
+
+[GStreamer-1.8.1 rtsp server and client on ubuntu](https://telecom.altanai.com/2016/05/20/gstreamer-1-8-1-rtsp-server-and-client-on-ubuntu/)
+
+[GStreamer Examples for UDP/TCP/RTP/RTSP/ABS](http://trac.gateworks.com/wiki/Yocto/gstreamer/streaming)
+
+```bash
+sudo apt-get install bison
+sudo apt-get install flex
+
+rtspsrc location=yoururl ! rtph264depay ! h264parse ! rtph264pay name=pay0 pt=96
+
+gst-launch-1.0 rtspsrc location=yoururl latency=2000 name=demux demux. ! decodebin ! queue2 ! autovideosink sync=true demux. ! decodebin ! queue2 ! autoaudiosink sync=true
+```
+
+## [FFmpeg+crtmpserver](https://telecom.altanai.com/category/media-processes/live-streaming-and-broadcasting/)
+
+```bash
+ffmpeg -i yoururl -an -r 10 -c:v libx264 -q 1 -f rtsp -metadata title=test rtsp://10.1.1.178:5554/flvplayback
+
+ffmpeg -i yoururl -f flv -s qvga -b 750000 -ar 11025 -metadata streamName=aaa "tcp://10.1.1.178:6666/live"
+```
+
+## FFMPEG + HLS
+
+```bash
+ffmpeg -y -i yoururl -codec copy -bsf h264_mp4toannexb -map 0 -f segment -segment_time 10 -segment_format mpegts -segment_list "./VDO/prog_index.m3u8" -segment_list_type m3u8 "./VDO/fileSequence%d.ts"
+```
+
+C++ Codes for ffmpeg with HLS
+
+```c++
+av_dict_set(&opt, "segment_format", "mpegts", 0);
+av_dict_set(&opt, "segment_list_type", "m3u8", 0);
+av_dict_set_int(&opt, "segment_list_size", 0, 0);
+av_dict_set(&opt, "segment_time_delta", "0.1", 0);
+av_dict_set(&opt, "segment_time", "50.0", 0);
+av_dict_set(&opt, "segment_list_flags", "cache+live", 0);
+```
 
 
 
