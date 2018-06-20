@@ -4,8 +4,6 @@
 
 [Flask Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 
-
-
 [Gyazo](https://gyazo.com/captures) : online image editor and sharing
 
 https://libp2p.io/
@@ -18,15 +16,39 @@ https://nifi.apache.org/
 
 xcode hotkeys ([fold](https://stackoverflow.com/questions/2364484/enable-code-folding-by-default), [short cuts](http://roadfiresoftware.com/2015/05/useful-xcode-keyboard-shortcuts-for-developers/))
 
+[programming-blockchains-step-by-step](https://github.com/openblockchains/programming-blockchains-step-by-step)
+
+[Tui.Calendar](https://github.com/duangenquan/tui.calendar) 
+
+[Simple, powerful online communities.](https://github.com/duangenquan/spectrum)
+
+[十年开发经验之谈](https://cloud.tencent.com/developer/article/1004735)
+
+[各类笔记 wdx](https://github.com/wdxtub/WDXpeak)
+
+# Document Sharing
+
+[写文档，就用语雀](https://yuque.com/?utm_source=ruanyifeng.com) from alibaba
+
+Google docs
+
 # Hash
 
 TLSH - Trend Micro Locality Sensitive Hash ([c++ & python](https://github.com/trendmicro/tlsh),[js version](https://github.com/idealista/tlsh-js))
+
+# Distributed Systems
+
+[A Thorough Introduction to Distributed Systems](https://hackernoon.com/a-thorough-introduction-to-distributed-systems-3b91562c9b3c)
 
 
 
 # Database
 
 [Druid](http://druid.io/) is a high-performance, column-oriented, distributed data store.
+
+[Paxos](https://www.paxos.com/) combines regulated Trust status with distributed ledger technology to create a modern settlement platform.
+
+[Raft](https://raft.github.io/) is a consensus algorithm that is designed to be easy to understand. It's equivalent to Paxos in fault-tolerance and performance. 
 
 SQL
 
@@ -46,7 +68,15 @@ NoSQL
 
 # Bigdata visualization 
 
+## Airbnb
+
 [SuperSet](https://medium.com/@InDataLabs/superset-benefits-and-limitations-of-the-open-source-data-visualization-tool-by-airbnb-8dc8ac81efa9) is the open source data visualization tool by Airbnb. [Incubator-superset Github](https://github.com/apache/incubator-superset) with [its docker image](https://github.com/amancevice/superset).
+
+## Uber
+
+https://eng.uber.com/deckgl-v5/ visualize map data
+
+## Others
 
 [Pivot (imply)](https://docs.imply.io/on-premise/quickstart)
 
@@ -54,57 +84,47 @@ NoSQL
 
 
 
-# Interesting Repos
+# Hardware
 
-## 
+[Intel vpro](https://en.wikipedia.org/wiki/Intel_vPro)
 
-
-
-# Tech News
-
-[Google Research Blog](https://ai.googleblog.com/)
-
-[Engadget | Technology News, Advice and Features](https://link.zhihu.com/?target=http%3A//www.engadget.com/)
-
-[Small Business Ideas and Resources for Entrepreneurs](https://link.zhihu.com/?target=http%3A//www.inc.com/)
-
-[Entrepreneur - Start, run and grow your business](https://www.entrepreneur.com/)
-
-[WIRED](https://link.zhihu.com/?target=http%3A//www.wired.com/)
-
-[TechCrunch](https://link.zhihu.com/?target=http%3A//techcrunch.com/)
-
-[The Next Web](https://link.zhihu.com/?target=http%3A//thenextweb.com/)
-
-[Business Insider](https://link.zhihu.com/?target=http%3A//www.businessinsider.com/)
-
-[Fast Company](https://link.zhihu.com/?target=http%3A//www.fastcompany.com/)
-
-[Mashable](https://link.zhihu.com/?target=http%3A//mashable.com/)
-
-[Digg - What the Internet is talking about right now](https://link.zhihu.com/?target=http%3A//digg.com/)
-
-[http://techmeme.com/](https://link.zhihu.com/?target=http%3A//techmeme.com/)
-
-[VentureBeat | Tech News That Matters](https://link.zhihu.com/?target=http%3A//venturebeat.com/)
-
-[https://www.allthingsdigital.nl/](https://link.zhihu.com/?target=https%3A//www.allthingsdigital.nl/)
-
-[Gizmodo - Everything Is Technology](https://link.zhihu.com/?target=http%3A//gizmodo.com/)
-
-[Technology News](https://link.zhihu.com/?target=http%3A//www.cnet.com/news/)
-
-[MIT Technology Review](https://link.zhihu.com/?target=http%3A//www.technologyreview.com/)
-
-Reference
+[vivostick](https://www.asus.com/us/Stick-PCs/VivoStick-PC-TS10/)
 
 # Deployment
 
 [Concourse](https://concourse-ci.org/) is an open-source continuous thing-doer.
 
+[Scripts to configure various monitoring services on Ubuntu 14.04](https://github.com/duangenquan/monitoring)
+
+[Monitor Everything](https://ianunruh.com/2014/05/monitor-everything-part-4.html)
+
+rancher
+
+kubernetes
+
+kafaka  
+
+graphite
+
+graphana
+
+sonarwhal ([Github](https://github.com/sonarwhal), [site](https://sonarwhal.com/)) is a linting tool that will help you with your site's accessibility, speed, security and more, by checking your code for best practices and common errors.
 
 
-### Performance Monitoring
+
+**![img](https://lh6.googleusercontent.com/0SPBzY2thQyMUx8y5LJZU0siKVA9J7EuVYfyv9ethdzDwTvnp8EIwtpUtMtXvg85QwUmEsTQ5qu-8e0sX9mSw5wJI_iW_ZaJKiMzJAS2kUY_wozgzDcyWNacRt8QIAx9_fB1uNid)**
+
+## [Uber distributed architecture](https://blog.pragmaticengineer.com/distributed-architecture-concepts-i-have-learned-while-building-payments-systems/)
+
+
+
+## [Netflix High Available Server Deployment](https://medium.com/@NetflixTechBlog/tips-for-high-availability-be0472f2599c)
+
+Netflix built and use [Spinnaker](http://spinnaker.io/) as a platform for continuous integration and delivery. Many of the best practices discussed here have been encoded into Spinnaker.d
+
+## Performance Monitoring
+
+[flamebearer](https://github.com/mapbox/flamebearer)
 
 #### **Website Monitoring Tools**
 
@@ -156,15 +176,55 @@ Reference
 
 [General comparison for open source licenses](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
 
-# 
+#Markdown Tips
+
+[Markdown References](https://support.typora.io/Markdown-Reference/)
+Tools:
+
++ Typora
++ CMD Markdown
++ StackEdit
++ XPONENTIAL
 
 # Systems
 
 ## Linux
 
 ```bash
+# Show Json
+pip install pjson
+pip install underscore
+cat data.json | pjson
+cat data.json | underscore print
+
+# Copy sumbolic links
+cp -p src dst
+
+# Add dynamic folders
 add myapp.conf to /etc/ld.so.conf.d/
 ldconfig
+```
+
+
+
+## CentOS
+
+```bash
+# Clean cache
+# https://www.getpagespeed.com/server-setup/clear-disk-space-centos
+yum -y install yum-utils
+
+# Show login info
+last
+last | tac
+
+# show folders with sizes
+du -sh *
+
+# Delete a user
+sudo su -
+userdel -r username
+
 ```
 
 
@@ -185,7 +245,47 @@ Reinstall Ubuntu
 
 - [create boot stick](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0), [create boot stick using etcher](https://askubuntu.com/questions/801458/how-to-create-a-bootable-usb-stick-on-a-apple-macbook)
 - download [ubuntu releases](http://releases.ubuntu.com/)
-- 
+
+
+
+## Gmail Immigration
+
+References ([link1](https://www.labnol.org/internet/copy-gmail-messages/28085/))
+
+# Video Conference
+
++ uber conference
++ zoom.us
++ google hangout
++ skype
+
+# Upload Files to Server
+
+## AWS
+
+### Upload files to S3 using CURL
+
+```bash
+file=$1
+region=YOURREGION
+bucket=YOURBUCKET
+resource="/${bucket}/${file}"
+contentType="application/x-www-form-urlencoded"
+dateValue=`date -R`
+stringToSign="PUT\n\n${contentType}\n${dateValue}\n${resource}"
+s3Key=YOURKEY
+s3Secret=YOURSECRET
+echo "SENDING TO S3"
+signature=`echo -en ${stringToSign} | openssl sha1 -hmac ${s3Secret} -binary | base64`
+curl -vv -X PUT -T "${file}" \
+  -H "Host: s3.${region}.amazonaws.com" \
+  -H "Date: ${dateValue}" \
+  -H "Content-Type: ${contentType}" \
+  -H "Authorization: AWS ${s3Key}:${signature}" \
+  https://s3.${region}.amazonaws.com/${bucket}/${file}
+```
+
+
 
 # Stream
 
@@ -263,6 +363,94 @@ Note that, if press these hot keys with control, the screenshot is in memory (no
 
 [Photo Editor](https://www.techradar.com/news/the-best-free-mac-photo-editor)
 
+# Python
+
+## Auto format
+
+```bash
+# https://github.com/ambv/black
+pip install black
+black {source_file_or_directory}
+```
+
+
+
+## Generate installation dependencies
+
+```bash
+
+## Method 1
+pip freeze > requirements.txt
+## Method 2
+pip install pipreqs
+pipreqs /path/to/project
+```
+
+## Data structures
+
+[data structure list](https://dev.to/georgeoffley/data-structures-in-python-lists-and-the-avengers-305f)
+
+## Search solution for errors from stack overflow
+
+[Rebound](https://github.com/shobrook/rebound ) is a command-line tool that instantly fetches Stack Overflow results when you get a compiler error. Just use the `rebound` command to execute your file.
+
+
+
+# JS
+
+### Object.assign()
+
+The Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object.
+
+```js
+const object1 = {
+  a: 1,
+  b: 2,
+  c: 3
+};
+
+const object2 = Object.assign({c: 4, d: 5}, object1);
+
+console.log(object2.c, object2.d);
+// expected output: 3 5
+```
+
+### [OW checks function arguments](https://github.com/sindresorhus/ow)
+
+JavaScript supports long long ints
+
+```bash
+const a = 2172141653n;
+const b = 15346349309n;
+a * b // 33334444555566667777n
+Number(a) * Number(b) // 33334444555566670000
+```
+
+## this
+
+this in js shows the running environment.
+
+```bash
+var obj = {
+  foo: function () { console.log(this.bar) },
+  bar: 1
+};
+
+var foo = obj.foo;
+var bar = 2;
+
+obj.foo() // 1
+foo() // 2
+```
+
+
+
+##Others
+
+[Mustard UI](https://mustard-ui.com/) is a starter CSS framework that actually looks good.
+
+[Rebound](https://github.com/shobrook/rebound ) is a command-line tool that instantly fetches Stack Overflow results when you get a compiler error. Just use the `rebound` command to execute your file. 
+
 # R
 
 ## [Installation in windows and mac](https://www.andrewheiss.com/blog/2012/04/17/install-r-rstudio-r-commander-windows-osx/)
@@ -311,7 +499,7 @@ chmod 400 xx.pem
 
 # Docker
 
-Docker Cheat Sheet( [Github](https://github.com/wsargent/docker-cheat-sheet), [pdf](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf) )
+Docker Cheat Sheet( [Github](https://github.com/wsargent/docker-cheat-sheet), [pdf](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf), [入门教程](http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html))
 
 ```bash
 # Log into a registry

@@ -12,9 +12,11 @@
 
 [Harvard College’s CS50 focusing on the development of 2D and 3D interactive games](https://cs50.github.io/games/)
 
+[Harvard CS109 Data Science](http://cs109.github.io/2015/index.html)
+
+[The foundations of data science](https://ds8.gitbooks.io/textbook/content/)
+
 [Facebook Machine Learning video series](https://research.fb.com/the-facebook-field-guide-to-machine-learning-video-series/)
-
-
 
 # Repos
 

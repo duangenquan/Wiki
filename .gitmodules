@@ -1,3 +1,6 @@
 [submodule "code/nodeJS/socket.io"]
 	path = code/nodeJS/socket.io
 	url = https://github.com/socketio/socket.io
+[submodule "code/deckgl/deck.gl"]
+	path = code/deckgl/deck.gl
+	url = https://github.com/uber/deck.gl.git
