@@ -20,10 +20,10 @@ vim ~/.bash_profile
 source ~/.bash_profile
 
 # Create db path
-mkdir -p ./db
+mkdir -p /Applications/mongodb/db
 
 # Start mongo db service
-mongod --dbpath ./db
+mongod --dbpath /Applications/mongodb/db
 
 # Verify mongo db
 mongo --host 127.0.0.1:27017
